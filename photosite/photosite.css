@@ -2,3 +2,15 @@ img {
     width: 30%;
     margin: calc(10%/6);
 }
+
+nav {
+    text-transform: uppercase;
+    margin: calc(10%/6);
+    border-bottom: 2px solid rgb(234, 234, 241);
+    padding: 1em 0;
+    font-size: 25px;
+    width: 30%;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+
+}
