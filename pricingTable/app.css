@@ -124,20 +124,24 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 50rem;
-        height: 70vh;
+        width: 63rem;
+        height: 90vh;
         border-radius: 7px;
     }
 
     .pricing-plan {
-        width: 15rem;
+        width: 18rem;
         height: 90%;
         border-right: 1px solid rgba(0, 119, 255, 0.13);
         border-bottom: none;
+        padding: 0 4rem;
+        justify-content: center;
+        padding-bottom: 2rem;
     }
 
     .pricing-plan img {
-        width: 10rem;
+        width: 15rem;
+        padding: 2rem 0;
     }
 
     .pricing-plan:last-child {
@@ -146,15 +150,23 @@ body {
 
     .pricing-header {
         width: 80%;
+        font-size: 16px;
+        opacity: 0.8;
     }
 
     .pricing-features {
-        width: 80%;
+        width: 90%;
+    }
+
+    .pricing-price {
+        font-size: 23px;
+        font-weight: 600;
     }
 
     .pricing-button {
-        font-size: 8px;
-        width: 7rem;
+        font-size: 12px;
+        width: 9rem;
+
     }
 
 
