@@ -4,12 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.col-brown {
-    background-color: rgba(202, 51, 51, 0.671);
+
+.container-fluid {
+    background-color: rgba(4, 6, 17, 0.938);
     color: rgb(240, 242, 243);
+}
+
+.navbar {
+    background-color: rgba(202, 51, 51, 0.178);
 }
 
 .row {
@@ -20,21 +25,55 @@
 .container {
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .navbar {
     width: 100vw;
 }
 
+nav {
+    color: white;
+    width: 40em;
+    background-color: hsl(0, 0%, 7%);
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 1px 0px 50px 2px rgba(4, 14, 43, 0.918);
+
+}
+
+.nav-item {
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0 13px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+
+.nav-item:hover,
+.nav-item:focus {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(0, 255, 255, 0.068);
+    box-shadow: 0 -20px 60px 2px rgb(255, 0, 234);
+    opacity: 0.4;
+    border-top: 2px solid rgb(216, 26, 58);
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
 
 .main-bg {
-
     background-image: url(./bg-2.jpeg);
     background-size: cover;
     object-fit: cover;
     border-radius: 5px;
-    opacity: 0.9;
-
+    opacity: 0.8;
+    border-radius: 5px;
 }
 
 .h-text {
@@ -58,8 +97,11 @@
     background-color: rgba(0, 0, 0, 0.288);
 }
 
+
 .col {
     width: 40vw;
+    box-shadow: 0 -20px 60px 2px rgb(255, 0, 234);
+    box-shadow: 1px 0px 50px 2px rgba(184, 21, 157, 0.151);
 }
 
 section {
@@ -71,32 +113,31 @@ section {
 section .begena {
     background-image: url(./begena.jpeg);
     background-size: cover;
-    opacity: 0.9;
+    opacity: 0.8;
+    border-radius: 5px;
 }
 
 section .krar {
     background-image: url(./krar.jpeg);
     background-size: cover;
     opacity: 0.8;
+    border-radius: 5px;
 }
 
 section .mesenqo {
     background-image: url(./mesenqo.jpeg);
     background-size: cover;
     opacity: 0.8;
+    border-radius: 5px;
 }
 
 section .drawing {
     background-image: url(./Ethiopian\ Beauty\ \ by\ PbJournal\ _\ Redbubble.jpeg);
     background-size: cover;
+
     opacity: 0.8;
+    border-radius: 5px;
 }
-
-
-.nav-item {
-    color: red;
-}
-
 
 
 
@@ -114,13 +155,23 @@ section .drawing {
         align-items: center;
     }
 
-    img {
-        width: 1000px;
-        height: 1000px;
+    .begena {
+        width: 100vw;
+        height: 120vh;
+        background-position: center;
     }
 
+    .krar {
+        width: 100vw;
+        height: 120vh;
+        background-position: center;
+    }
 
-
+    .mesenqo {
+        width: 100vw;
+        height: 120vh;
+        background-position: bottom;
+    }
 }
 
 @media (min-width: 900px) {
@@ -134,6 +185,9 @@ section .drawing {
 
     section .mesenqo {
         order: 2;
+
     }
+
+
 
 }
