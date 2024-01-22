@@ -4,17 +4,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
 .container-fluid {
     background-color: rgba(4, 6, 17, 0.938);
     color: rgb(240, 242, 243);
-}
-
-.navbar {
-    background-color: rgba(202, 51, 51, 0.178);
 }
 
 .row {
@@ -30,34 +26,12 @@
     align-items: center;
 }
 
-.navbar {
-    width: 100vw;
-}
-
-nav {
-    color: white;
-    width: 40em;
-    background-color: hsl(0, 0%, 7%);
-    height: 10vh;
-    display: flex;
-    justify-content: space-around;
-    box-shadow: 1px 0px 50px 2px rgba(4, 14, 43, 0.918);
-
-}
-
-.nav-item {
-    color: rgba(255, 255, 255, 0.5);
-    padding: 0 13px;
-    cursor: pointer;
-    margin-top: 30px;
-}
-
 
 .nav-item:hover,
 .nav-item:focus {
-    color: rgba(255, 255, 255, 0.9);
-    background-color: rgba(0, 255, 255, 0.068);
-    box-shadow: 0 -20px 60px 2px rgb(255, 0, 234);
+    color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(249, 250, 252, 0.774);
+    /* box-shadow: 0 -20px 60px 2px rgb(255, 0, 234);  */
     opacity: 0.4;
     border-top: 2px solid rgb(216, 26, 58);
 }
@@ -74,6 +48,7 @@ h2 {
     border-radius: 5px;
     opacity: 0.8;
     border-radius: 5px;
+    z-index: 4;
 }
 
 .h-text {
@@ -100,7 +75,7 @@ h2 {
 
 .col {
     width: 40vw;
-    box-shadow: 0 -20px 60px 2px rgb(255, 0, 234);
+    box-shadow: 0 -20px 60px 2px rgb(255, 0, 0);
     box-shadow: 1px 0px 50px 2px rgba(184, 21, 157, 0.151);
 }
 
@@ -110,33 +85,42 @@ section {
     margin: 30px 0;
 }
 
+section:last-child() {
+    margin: 0;
+    padding: 0;
+}
+
 section .begena {
     background-image: url(./begena.jpeg);
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.7;
     border-radius: 5px;
+    z-index: 4;
 }
 
 section .krar {
     background-image: url(./krar.jpeg);
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.7;
     border-radius: 5px;
+    z-index: 4;
 }
 
 section .mesenqo {
     background-image: url(./mesenqo.jpeg);
     background-size: cover;
-    opacity: 0.8;
+    opacity: 0.7;
     border-radius: 5px;
+    z-index: 4;
 }
 
 section .drawing {
-    background-image: url(./Ethiopian\ Beauty\ \ by\ PbJournal\ _\ Redbubble.jpeg);
+    background-image: url(./drawing.jpeg);
     background-size: cover;
 
-    opacity: 0.8;
+    opacity: 0.7;
     border-radius: 5px;
+    z-index: 4;
 }
 
 
@@ -171,6 +155,16 @@ section .drawing {
         width: 100vw;
         height: 120vh;
         background-position: bottom;
+    }
+
+    section {
+        position: relative;
+    }
+
+    .main-bg {
+        background: none;
+        color: black;
+        background-color: rgb(3, 3, 12);
     }
 }
 
