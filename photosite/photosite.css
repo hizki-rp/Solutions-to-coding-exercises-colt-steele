@@ -1,16 +1,49 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 img {
-    width: 30%;
-    margin: calc(10%/6);
+    width: 100%;
+    border: 2px solid white;
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+
+
 }
 
 nav {
     text-transform: uppercase;
-    margin: calc(10%/6);
     border-bottom: 2px solid rgb(234, 234, 241);
     padding: 1em 0;
-    font-size: 25px;
-    width: 30%;
+    font-size: 12px;
+    width: 100%;
     font-family: sans-serif;
     letter-spacing: 2px;
 
+}
+
+@media (min-width: 540px) {
+    img {
+        width: 30%;
+        margin: calc(10%/6);
+    }
+
+    nav {
+        font-size: 24px;
+        width: 30%;
+    }
+
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+
+    }
 }
