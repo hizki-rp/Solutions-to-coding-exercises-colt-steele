@@ -29,21 +29,3 @@ nav {
     letter-spacing: 2px;
 
 }
-
-@media (min-width: 540px) {
-    img {
-        width: 30%;
-        margin: calc(10%/6);
-    }
-
-    nav {
-        font-size: 24px;
-        width: 30%;
-    }
-
-    .container {
-        flex-direction: row;
-        flex-wrap: wrap;
-
-    }
-}
